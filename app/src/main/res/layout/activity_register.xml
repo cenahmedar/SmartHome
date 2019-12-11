@@ -28,6 +28,7 @@
 
 
             <EditText
+                android:id="@+id/tx_name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Name"
@@ -39,9 +40,11 @@
                 android:fontFamily="@font/roboto_regular"
                 android:background="@drawable/et_custom"
                 android:textSize="15sp"
-                android:textColorHint="@color/colorBlueGray"/>
+                android:textColorHint="@color/colorBlueGray"
+                android:textColor="@color/colorCharcoalGray"/>
 
             <EditText
+                android:id="@+id/tx_surname"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Surname"
@@ -50,12 +53,14 @@
                 android:layout_marginBottom="10dp"
                 android:padding="15dp"
                 android:fontFamily="@font/roboto_regular"
-                android:inputType="textEmailAddress"
+                android:inputType="textPersonName"
                 android:background="@drawable/et_custom"
                 android:textSize="15sp"
-                android:textColorHint="@color/colorBlueGray"/>
+                android:textColorHint="@color/colorBlueGray"
+                android:textColor="@color/colorCharcoalGray"/>
 
             <EditText
+                android:id="@+id/tx_email"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Email"
@@ -67,9 +72,11 @@
                 android:inputType="textEmailAddress"
                 android:background="@drawable/et_custom"
                 android:textSize="15sp"
-                android:textColorHint="@color/colorBlueGray"/>
+                android:textColorHint="@color/colorBlueGray"
+                android:textColor="@color/colorCharcoalGray"/>
 
             <EditText
+                android:id="@+id/tx_username"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Username"
@@ -78,12 +85,14 @@
                 android:layout_marginBottom="10dp"
                 android:padding="15dp"
                 android:fontFamily="@font/roboto_regular"
-                android:inputType="textEmailAddress"
+                android:inputType="textPersonName"
                 android:background="@drawable/et_custom"
                 android:textSize="15sp"
-                android:textColorHint="@color/colorBlueGray"/>
+                android:textColorHint="@color/colorBlueGray"
+                android:textColor="@color/colorCharcoalGray"/>
 
             <EditText
+                android:id="@+id/tx_phone"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Phone"
@@ -92,12 +101,14 @@
                 android:layout_marginBottom="10dp"
                 android:padding="15dp"
                 android:fontFamily="@font/roboto_regular"
-                android:inputType="textEmailAddress"
+                android:inputType="phone"
                 android:background="@drawable/et_custom"
                 android:textSize="15sp"
-                android:textColorHint="@color/colorBlueGray"/>
+                android:textColorHint="@color/colorBlueGray"
+                android:textColor="@color/colorCharcoalGray"/>
 
             <EditText
+                android:id="@+id/tx_password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Password"
@@ -106,12 +117,14 @@
                 android:layout_marginBottom="10dp"
                 android:padding="15dp"
                 android:fontFamily="@font/roboto_regular"
-                android:inputType="textEmailAddress"
+                android:inputType="textPassword"
                 android:background="@drawable/et_custom"
                 android:textSize="15sp"
-                android:textColorHint="@color/colorBlueGray"/>
+                android:textColorHint="@color/colorBlueGray"
+                android:textColor="@color/colorCharcoalGray"/>
 
             <EditText
+                android:id="@+id/tx_repassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Password confirm"
@@ -120,13 +133,42 @@
                 android:layout_marginBottom="10dp"
                 android:padding="15dp"
                 android:fontFamily="@font/roboto_regular"
-                android:inputType="textEmailAddress"
+                android:inputType="textPassword"
                 android:background="@drawable/et_custom"
                 android:textSize="15sp"
-                android:textColorHint="@color/colorBlueGray"/>
+                android:textColorHint="@color/colorBlueGray"
+                android:textColor="@color/colorCharcoalGray"/>
 
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/with_fingerprint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="with password"
+                    android:textColor="@color/colorPrimary"
+                    app:buttonTint="@color/colorPrimary"/>
+                <RadioButton
+                    android:id="@+id/with_fingerprint_and_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="with fingerprint and password"
+                    android:textColor="@color/colorPrimary"
+                    app:buttonTint="@color/colorPrimary"/>
+            </RadioGroup>
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_register"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
