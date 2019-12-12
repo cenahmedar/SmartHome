@@ -159,8 +159,9 @@ public class FingerprintActivity extends AppCompatActivity {
     }
 
     public void success(){
-        Intent intent = new Intent(FingerprintActivity.this, FingerprintActivity.class);
+        Intent intent = new Intent(FingerprintActivity.this, HomePageActivity.class);
         finish();
+        startActivity(intent);
 
     }
 }

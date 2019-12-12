@@ -107,17 +107,18 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
                 if(user.isFingerEnabled()){
-                    Intent intent = new Intent(LoginActivity.this, HomePageActivity.class);
-                    new ApplicationPreferenceManager(getApplicationContext())
-                            .saveSharedInfo(new SharedModel(user, cbRememberMe.isChecked()));
-                    startActivity(intent);
-                    finish();
-                }else{
                     Intent intent = new Intent(LoginActivity.this, FingerprintActivity.class);
                     new ApplicationPreferenceManager(getApplicationContext())
                             .saveSharedInfo(new SharedModel(user, cbRememberMe.isChecked()));
                     startActivity(intent);
                     finish();
+                }else{
+                    Intent intent = new Intent(LoginActivity.this, HomePageActivity.class);
+                    new ApplicationPreferenceManager(getApplicationContext())
+                            .saveSharedInfo(new SharedModel(user, cbRememberMe.isChecked()));
+                    startActivity(intent);
+                    finish();
+
 
                 }
 
