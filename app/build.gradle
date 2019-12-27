@@ -44,5 +44,5 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
 
     implementation 'androidx.biometric:biometric:1.0.0'
-
+    implementation 'com.firebaseui:firebase-ui-database:1.2.0'
 }
