@@ -79,9 +79,13 @@ public class LoginActivity extends AppCompatActivity {
                         if (!task.isSuccessful()) {
                             // there was an error
                             if (password.length() < 6) {
-                                Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),
+                                        "Password too short, enter minimum 6 characters!",
+                                        Toast.LENGTH_SHORT).show();
                             } else {
-                                Toast.makeText(LoginActivity.this, Objects.requireNonNull(task.getException()).toString(), Toast.LENGTH_LONG).show();
+                                Toast.makeText(LoginActivity.this,
+                                        Objects.requireNonNull(task.getException()).toString(),
+                                        Toast.LENGTH_LONG).show();
                             }
                         } else {
 
